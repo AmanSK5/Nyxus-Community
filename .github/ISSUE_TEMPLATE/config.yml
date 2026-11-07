@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: A question, or an idea
+    url: https://github.com/AmanSK5/nyxus/discussions
+    about: Questions go in Q&A, suggestions in Ideas. Issues are for things that are wrong.
+  - name: A security problem
+    url: https://github.com/AmanSK5/nyxus/security/advisories/new
+    about: Report it privately. Not as an issue.
+  - name: A licensed deployment that has stopped working
+    url: https://nyxus.co.uk/kb
+    about: Check the knowledge base, then email support@nyxus.co.uk; it reaches someone straight away.

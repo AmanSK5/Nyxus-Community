@@ -1,0 +1,38 @@
+name: Something is wrong
+description: A fault, a wrong figure, or a page that does not do what it says.
+labels: ["fault"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Leave out what identifies your organisation: no hostnames, company names, usernames, email addresses, keys or tokens, including in screenshots. The version and the steps are enough. If you think this is a security problem, do not file it here: see [SECURITY.md](../blob/main/SECURITY.md).
+  - type: input
+    id: version
+    attributes:
+      label: Version
+      description: From System health, or the receiver's /healthz.
+      placeholder: "0.6.0"
+    validations:
+      required: true
+  - type: dropdown
+    id: deployment
+    attributes:
+      label: How it runs
+      options:
+        - Kubernetes (chart)
+        - Docker Compose
+        - Not sure
+    validations:
+      required: true
+  - type: textarea
+    id: what
+    attributes:
+      label: What you did, and what happened instead
+      description: The page or command, what you expected, what you got. Error text in a code block, with anything identifying removed.
+    validations:
+      required: true
+  - type: textarea
+    id: since
+    attributes:
+      label: When it started
+      description: After an upgrade, after a setting changed, or always. Leave blank if you do not know.
